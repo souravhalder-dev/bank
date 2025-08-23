@@ -26,22 +26,37 @@ document.getElementById("add-money").addEventListener("click", function (e) {
 
 // toggle
 document.getElementById("addmoney-tog").addEventListener("click", function () {
-  document.getElementById("cashout").style.display = "none";
   document.getElementById("money").style.display = "block";
+  document.getElementById("paybill").style.display = "none";
   document.getElementById("bonus").style.display = "none";
+  document.getElementById("transfer").style.display = "none";
+  document.getElementById("cashout").style.display = "none";
 });
 document.getElementById("cashOut-tog").addEventListener("click", function () {
   document.getElementById("money").style.display = "none";
+  document.getElementById("paybill").style.display = "none";
+  document.getElementById("bonus").style.display = "none";
+  document.getElementById("transfer").style.display = "none";
   document.getElementById("cashout").style.display = "block";
 });
 document.getElementById("transfer-tog").addEventListener("click", function () {
   document.getElementById("money").style.display = "none";
   document.getElementById("cashout").style.display = "none";
+  document.getElementById("paybill").style.display = "none";
+  document.getElementById("bonus").style.display = "none";
   document.getElementById("transfer").style.display = "block";
 });
 document.getElementById("bonus-tog").addEventListener("click", function () {
   document.getElementById("money").style.display = "none";
   document.getElementById("cashout").style.display = "none";
   document.getElementById("transfer").style.display = "none";
+  document.getElementById("paybill").style.display = "none";
   document.getElementById("bonus").style.display = "block";
+});
+document.getElementById("Paybill-tog").addEventListener("click", function () {
+  document.getElementById("money").style.display = "none";
+  document.getElementById("cashout").style.display = "none";
+  document.getElementById("transfer").style.display = "none";
+  document.getElementById("bonus").style.display = "none";
+  document.getElementById("paybill").style.display = "block";
 });
